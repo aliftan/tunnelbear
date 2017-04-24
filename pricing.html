@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TunnelBear: Secure VPN Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Really simple VPN to browse the web privately &amp; securely. Unblock websites around the world with applications for Mac, PC, iOS, Android &amp; Chrome." />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#715942">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="SHORTCUT ICON" type="image/ico" href="images/favicon.ico">
+    <link rel="canonical" href="https://www.tunnelbear.com" />
+
+    <link rel='stylesheet' href='stylesheets/style.css' />
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/scroll-depth/jquery.scrolldepth.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="javascripts/shared.js"></script>
+    <script type="text/javascript" src="javascripts/layout.js"></script>
+
+</head>
+
+<!-- BODY -->
+
+<body class="sale nav-visible desktop">
+    <div id="global-wrapper">
+        <!-- HEADER -->
+        <div id="dummy-header"></div>
+       <header id="main-header" style="opacity: 0">
+         <div class="full">
+            <a id="logo" href="index.html" title="TunnelBear VPN"></a>
+            <div class="nav-public clearfix">
+               <ul>
+                  <li><a href="pricing.html">Pricing</a>
+                  </li>
+                  <li><a href="features.html">Features</a>
+                  </li>
+                  <li><a href="why-vpn.html">Why VPN?</a>
+                  </li>
+                 <li class="tight"><a href="download.html" class="btn btn-nav" onclick="ga('send', 'event', 'button', 'download-click', 'download-menu');">Download</a></li>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="compact static">
+            <div class="nav">
+               <a id="logo" href="index.html" title="TunnelBear VPN"></a>
+               <div id="menu-toggle">Menu</div>
+            </div>
+            <div class="nav-public clearfix">
+               <ul class="menu">
+                  <li><a href="pricing.html">Pricing</a>
+                  </li>
+                  <li><a href="features.html">Features</a>
+                  </li>
+                  <li><a href="why-vpn.html">Why VPN?</a>
+                  </li>
+                  <li><a href="download.html">Download</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav-private clearfix">
+               <ul class="menu">
+                  <li><a href="pricing.html">Pricing</a>
+                  </li>
+                  <li><a href="features.html">Features</a>
+                  </li>
+                  <li><a href="why-vpn.html">Why VPN?</a>
+                  </li>
+                  <li><a href="download.html">Download</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+        <!-- AKHIR HEADER-->
+
+        <div id="pricing-wrap">
+            <section class="top-ribbon">
+                <h1 class="h2 hidden-md hidden-lg">Meet the TunnelBears</h1>
+                <h1 class="h2 hidden-xs hidden-sm">Meet the<br />TunnelBears</h1>
+            </section>
+            <div class="container">
+                <section id="little-details" class="plan-wrap col-sm-4 hidden-xs">
+                    <div id="little-pic" class="bear-pic col-xs-12">
+                        <img src="images/upgrade_3bears_little.svg"></img>
+                    </div>
+                    <div class="bear-plan col-xs-12">
+                        <h2 class="h1">Little</h2>
+                        <h3>Free</h3>
+                        <p>500MB of free data
+                            <br> every&nbsp;month</p>
+                    </div>
+                </section>
+                <section id="giant-details" class="plan-wrap col-xs-6 col-sm-4">
+                    <div id="giant-pic" class="bear-pic col-xs-12">
+                        <img src="images/upgrade_3bears_giant.svg"></img>
+                    </div>
+                    <div class="bear-plan col-xs-12">
+                        <h2 class="h1">Giant</h2>
+                        <h3>$<span id="monthlyPrice">9.99</span><span class="per-month">/month</span></h3>
+                        <p class="fine-print-lg">$<span class="giant-yearly">119.88</span> for 12 months</p>
+                        <p>Unlimited data,
+                            <br> pay&nbsp;monthly</p>
+                    </div>
+                </section>
+                <section id="grizz-details" class="plan-wrap col-xs-6 col-sm-4">
+                    <div class="bear-pic col-xs-12">
+                        <img src="images/3bears_grizzly.svg"></img>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="recommend-banner">
+                            <span class="most-pop">Most popular - </span>Save <span id="save-percent">57</span>%
+                        </div>
+                    </div>
+                    <div class="bear-plan col-xs-12">
+                        <h2 class="h1">Grizzly</h2>
+                        <h3>
+                        <span class="grizz-monthly-price">
+                        $<span id="grizzlyMonthly">4.17</span>
+                        </span>
+                        <span class="per-month">/month</span>
+                     </h3>
+                        <p class="fine-print-lg">
+                            <span class="coupon-applied">$<span class="giant-yearly">119.88</span></span> $<span id="grizzlyPrice">49.99 </span>
+                            <span id="billingCycle">billed yearly</span>
+                        </p>
+                        <p>Unlimited data,
+                            <br />pay&nbsp;yearly.</p>
+                    </div>
+                </section>
+                <section id="cta" class="col-xs-12">
+                    <a href="" class="get-started btn btn-lg" onclick="ga('send', 'event', 'button', 'upgrade-click', 'pricing-page');">Get Premium</a>
+                    <p class="try-free">Or try TunnelBear <a href="download.html">free</a>
+                    </p>
+                    <div class="payment-methods col-xs-12"></div>
+                    <p class="fine-print-lg payment-note col-xs-12">All pricing shown in USD</p>
+                </section>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $.get('/core/api/getPricingDetails', function(data) {
+                $('#monthlyPrice').html(data.monthlyPrice);
+                $('#grizzlyPrice').html(data.grizzlyPrice);
+
+                var giantYearlyPrice = data.monthlyPrice * 12;
+                $('.giant-yearly').html(giantYearlyPrice.toFixed(2));
+
+                if (data.grizzlyPrice !== data.grizzlyRenewPrice) {
+                    $('#billingCycle').html('for 12 months');
+                }
+
+                var month = data.grizzlyPrice / 12;
+                $('#grizzlyMonthly').html(month.toFixed(2));
+
+                var grizz = parseFloat(data.grizzlyPrice);
+                var giant = parseFloat(data.monthlyPrice);
+                var percent = Math.abs(giant * 12 - grizz) / (giant * 12);
+                $('#save-percent').html(Math.round(percent * 100));
+            });
+        </script>
+        <script src="https://cdn.optimizely.com/js/2430720082.js"></script>
+
+
+        <!--FOOTER -->
+        <footer class="col-md-12">
+            <div>
+                <section id="brand" class="hidden-sm hidden-xs col-md-4">
+                    <header>
+                        <a title="TunnelBear VPN"></a>
+                    </header>
+                    <p class="fine-print-lg">Really really simple privacy apps</p>
+                    <p class="fine-print legal">&copy;2017 TunnelBear Inc.</p>
+                </section>
+                <section class="sitemap col-xs-6 col-md-2">
+                    <header>TUNNELBEAR</header>
+                    <div>
+                        <a class="fine-print-lg" href="why-vpn.html">Why VPN?</a>
+                        <a class="fine-print-lg" href="download.html">Download</a>
+                        <a class="fine-print-lg" href="features.html">Features</a>
+                        <a class="fine-print-lg" href="pricing.html">Pricing</a>
+
+                    </div>
+                </section>
+                <section class="sitemap col-xs-6 col-md-2">
+                    <header>APPS</header>
+                    <div>
+                        <a class="fine-print-lg" href="download.html">iPhone &amp; iPad</a>
+                        <a class="fine-print-lg" href="android.html">Android</a>
+                        <a class="fine-print-lg" href="mac.html">Mac</a>
+                        <a class="fine-print-lg" href="windows.html">Windows</a>
+                        <a class="fine-print-lg" href="browser.html">Browser</a>
+                        <a class="fine-print-lg" href="blocker.html">Blocker</a>
+                    </div>
+                </section>
+                <section class="sitemap company col-xs-6 col-md-2">
+                    <header>COMPANY</header>
+                    <div>
+                        <a class="fine-print-lg" href="">Blog</a>
+                        <a class="fine-print-lg" href="about.html">About Us</a>
+                        <a class="fine-print-lg" href="">Partner</a>
+                        <a class="fine-print-lg" href="">Privacy Policy</a>
+                        <a class="fine-print-lg" href="tos.html">Terms of Service</a>
+                    </div>
+                </section>
+                <section id="follow-us" class="sitemap col-xs-6 col-md-2">
+                    <header>FOLLOW US</header>
+                    <a id="fb-icon" class="icon" href=""></a>
+                    <a id="tw-icon" class="icon" href=""></a>
+                    <a id="gp-icon" class="icon" href=""></a>
+                </section>
+            </div>
+
+        </footer>
+        <!--AKHIR FOOTER -->
+
+</body>
+
+</html>
